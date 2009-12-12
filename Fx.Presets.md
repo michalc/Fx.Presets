@@ -1,4 +1,4 @@
-Class: Fx.Elements.Preset {#Fx.Elements.Preset}
+Class: Fx.Elements.Preset {#FxElementsPreset}
 ===============================================
 
 <big>Allows you to apply style transitions to a collection of elements, or to multiple collections of elements, using pre-defined 'presets' that choose which transitions to apply to which element of each collection.</big>
@@ -10,8 +10,8 @@ Fx.Elements
 
 
 
-Fx.Elements.Preset Method: constructor {#Fx.Elements.Preset:constructor}
--------------------------------------------------------------------------
+Fx.Elements.Preset Method: constructor {#FxElementsPreset:constructor}
+------------------------------------------------------------------------
 
 ### Syntax:
 
@@ -23,8 +23,8 @@ Fx.Elements.Preset Method: constructor {#Fx.Elements.Preset:constructor}
 2. options - (`object`: optional) Same options as to Fx.Elements
 
 
-Fx.Elements.Preset Method: start {#Fx.Elements.Preset:start}
--------------------------------------------------------------
+Fx.Elements.Preset Method: start {#FxElementsPreset:start}
+------------------------------------------------------------
 
 <big>Applies a transition.</big>
 
@@ -63,7 +63,7 @@ fxMultiple.start([highlight, show], 3);
 * The parameter argument is typically an integer that identifies the element(s) of array(s) passed to the Fx.Element.Preset constructor.
 
 
-Constructor: Fx.Preset {#Fx.Preset}
+Constructor: Fx.Preset {#FxPreset}
 ===================================
 
 <big>Used to initialise members of the Fx.Presets hash with styles, in order to be passed to the start method of Fx.Elements.Presets.</big>
@@ -91,13 +91,13 @@ Returns: An initialised preset, ready to be passed to the start method of Fx.Ele
 var highlight = new Fx.Preset(Fx.Presets.Unique, [{color: "#ff0000"}, {color: "#000000"}]);
 
 
-Hash: Fx.Presets {#Fx.Presets}
+Hash: Fx.Presets {#FxPresets}
 ==============================
 
 <big>Used to define style transitions on a collection of elements. In the following descriptions the "selected" element is chosen by the "parameters" argument to the Fx.Elements.Preset start method: it is an integer i identifying the index of the selected element in the collection.</big>
 
 
-Fx.Presets Member: All {#Fx.Presets:All}
+Fx.Presets Member: All {#FxPresets:All}
 ----------------------------------------
 
 <big>All elements of the collection are transitioned identically.</big>
@@ -111,7 +111,7 @@ var myPreset = new Fx.Preset(Fx.Presets.All, styles);
 1. styles (`object`) A style object
 
 
-Fx.Presets Member: Unique {#Fx.Presets:Unique}
+Fx.Presets Member: Unique {#FxPresets:Unique}
 ----------------------------------------------
 
 <big>The selected element is uniquely transitioned, while all the others have the same transition applied.</big>
@@ -126,7 +126,7 @@ var myPreset = new Fx.Preset(Fx.Presets.Unique, [styleSelected, stylesDefault]);
 2. stylesDefault (`object`) A style object for the other elements
 
 
-Fx.Presets Member: Solo {#Fx.Presets:Solo}
+Fx.Presets Member: Solo {#FxPresets:Solo}
 ------------------------------------------
 
 <big>The selected element is transitioned, while the others are not transitioned.</big>
@@ -142,7 +142,7 @@ var myPreset = new Fx.Preset(Fx.Presets.Solo, styles);
 1. styles (object) A style object for the selected element
 
 
-Fx.Presets Member: Nothing {#Fx.Presets:Nothing}
+Fx.Presets Member: Nothing {#FxPresets:Nothing}
 ------------------------------------------------
 
 <big>Define a null transition: none of the members of the collection are transitioned</big>
@@ -152,7 +152,7 @@ Fx.Presets Member: Nothing {#Fx.Presets:Nothing}
 Does not need to be initialised: Fx.Presets.Nothing can be used wherever an initialised preset is required
 
 
-Fx.Presets Member: Arbitrary {#Fx.Presets:Arbitrary}
+Fx.Presets Member: Arbitrary {#FxPresets:Arbitrary}
 ----------------------------------------------------
 
 <big>All elements of the collection are transitioned identically, but the style is the ith style object from an array.</big>
@@ -169,7 +169,7 @@ var myPreset = new Fx.Preset(Fx.Presets.Arbitrary, styles);
 
 
 
-Fx.Presets Member: ArbitraryUnique {#Fx.Presets:ArbitraryUnique}
+Fx.Presets Member: ArbitraryUnique {#FxPresets:ArbitraryUnique}
 ----------------------------------------------------------------
 
 <big>The selected element is transitioned using the ith style object from an array, while the others do not transition.</big>
@@ -184,7 +184,7 @@ var myPreset = new Fx.Preset(Fx.Presets.ArbitraryUnique, styles);
 1. styles (`array`) An array of style objects
 
 
-Fx.Presets Member: ArbitrarySolo {#Fx.Presets:ArbitrarySolo}
+Fx.Presets Member: ArbitrarySolo {#FxPresets:ArbitrarySolo}
 ------------------------------------------------------------
 
 <big>The selected element is transitioned using the ith style object from an array, while all the others have the same transition applied.</big>
@@ -200,7 +200,7 @@ var myPreset = new Fx.Preset(Fx.Presets.ArbitrarySolo, [stylesSelected, styleDef
 2. stylesDefault (`object`) A style object for the other elements
 
 
-Fx.Presets Member: Grid {#Fx.Presets:Grid}
+Fx.Presets Member: Grid {#FxPresets:Grid}
 ------------------------------------------
 
 <big>The selected element defines a selected column and row in a grid of elements (in row major order). Selected and unselected rows and columns are transitioned by merging the supplied style objects.</big>
