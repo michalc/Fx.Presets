@@ -53,12 +53,12 @@ As above, we have a collection of divs, 'divs'. On click of each one, we want it
 
 We can use Fx.Presets.All to act on all elements in the same way. Continuing from the above example, say we have a link 'reset', that upon clicking we wish to fade all text to opacity 0, and all divs to black. The following code does this:
 
-var lowlightAll = new Fx.Preset(Fx.Presets.All, {'background-color': '#000000'});
-var fadeAll = new Fx.Preset(Fx.Presets.All, {opacity: 0});
- 
-reset.addEvent('click', function() {
-    fx.start([lowlightAll, fadeAll]);
-});
+	var lowlightAll = new Fx.Preset(Fx.Presets.All, {'background-color': '#000000'});
+	var fadeAll = new Fx.Preset(Fx.Presets.All, {opacity: 0});
+	 
+	reset.addEvent('click', function() {
+	    fx.start([lowlightAll, fadeAll]);
+	});
 
 
 
