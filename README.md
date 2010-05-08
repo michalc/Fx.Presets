@@ -5,7 +5,7 @@ Fx.Presets can be used to clearly define and use groups of related animations on
 
 Using Fx.Presets offers two main advantages over other methods. It results in smoother animations then using multiple Fx.* instances simultaneously. It also results in nicer code than when using a single Fx.Elements instance to transition styles across different elements from multiple groups at the same time.
 
-![Screenshot](http://github.com/michalc/Fx.Presets/blob/master/Images/Fx.Presets.png)
+![Screenshot](http://github.com/michalc/Fx.Presets/raw/master/Images/Fx.Presets.png)
 
 How to use
 ----------
