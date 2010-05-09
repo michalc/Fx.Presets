@@ -11,6 +11,8 @@ Using Fx.Presets offers two main advantages over other methods. It results in sm
 Demo
 ----
 
+Below is the embedded version of http://jsfiddle.net/9t5Vz/
+
 <iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/9t5Vz/embedded/"></iframe>
 
 [More demos](http://yetagain.net/plugins/fxpresets/demos/) are available.
