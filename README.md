@@ -7,6 +7,15 @@ Using Fx.Presets offers two main advantages over other methods. It results in sm
 
 ![Screenshot](http://github.com/michalc/Fx.Presets/raw/master/Images/Fx.Presets.png)
 
+
+Demos
+-----
+
+<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/9t5Vz/embedded/"></iframe>
+
+[More demos](http://yetagain.net/plugins/fxpresets/demos/) are available.
+
+
 How to use
 ----------
 
@@ -60,10 +69,3 @@ We can use Fx.Presets.All to act on all elements in the same way. Continuing fro
 	reset.addEvent('click', function() {
 	    fx.start([lowlightAll, fadeAll]);
 	});
-
-
-
-Demos
------
-
-[Basic and more complex demos](http://yetagain.net/plugins/fxpresets/demos/) are available.
