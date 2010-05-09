@@ -8,8 +8,8 @@ Using Fx.Presets offers two main advantages over other methods. It results in sm
 ![Screenshot](http://github.com/michalc/Fx.Presets/raw/master/Images/Fx.Presets.png)
 
 
-Demos
------
+Demo
+----
 
 <iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/9t5Vz/embedded/"></iframe>
 
